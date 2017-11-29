@@ -41,6 +41,7 @@ public class CacheConfiguration {
             cm.createCache(com.lpa.jblog.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.lpa.jblog.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.lpa.jblog.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.lpa.jblog.domain.Post.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
